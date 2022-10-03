@@ -44,6 +44,7 @@ try:
         time.sleep(1)
 
         #Procesos necesarios para el correcto almacenamiento
+        sTmpFileStamp = time.strftime('%Y%m%d%H')
         if sTmpFileStamp != sFileStamp: 
            f.close 
            sFileName = 'out/' + sTmpFileStamp + '.txt' 
